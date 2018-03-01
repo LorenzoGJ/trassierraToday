@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Contenido</th>
+            <th>Categoria</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for noticia in listaNoticias %}
+                <tr>
+                    <td>{{ noticia.id }}</td>
+                    <td>{{ noticia.titulo }}</td>
+                    <td>{{ noticia.contenido }}</td>
+                    <td>{{ noticia.categoria}}</td>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1 class="text-center">Bienvenido a Trassierra Today</h1>
+    <h3 class="page-header text-center">Informate de los cotilleos más actuales</h3>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Noticias de Actualidad</div>
+                    <div class="panel-body"><img src="http://www.agenciaandaluzaeducacion.es/image/image_gallery?uuid=956f43a8-7fe3-4aa1-8a4a-1f05f5fa1d91&groupId=10137&t=1479802040876" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">Te informamos de los ultimos acontecimientos de nuestro centro
+                        <div>
+                            <a href="/#" class="btn btn-primary">Actualizate!</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">¿Quieres Vender tu Opel Corsa?</div>
+                    <div class="panel-body"><img src="http://www.mercadoracing.org/imagenes-anuncios/38/446220/opel-corsa-irmscher-sprint-c.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">Ven y unete posteando tu deseo de vender tu Opel Corsa <div>
+                            <a href="{{absolute_url ('newopel')}}" class="btn btn-primary">Vendelo!</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Diviertete con Nuestro Contenido</div>
+                    <div class="panel-body"><img src="https://hemeroteca.vozlibre.com/userfiles/2a_decada/image/FOTOS%202011/10%20OCTUBRE%202011/10%20OCTUBRE%202011/angel%20minguez%20twitter.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">Nos basamos en el humor sin ofender a nadie, asi que no te des por aludido
+                        <div>
+                            <a href="/#" class="btn btn-primary">Riete!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+        </div>
+    </div>
+{% endblock %}
